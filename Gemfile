@@ -6,3 +6,7 @@ group :development, :test do
   gem 'jekyll-sitemap', '~> 1.2.0'
   gem 'jekyll-toc', '~> 0.9.0'
 end
+
+install_if -> { RUBY_PLATFORM =~ /win/ } do
+  gem 'wdm', '~> 0.1.1'
+end
